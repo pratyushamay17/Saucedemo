@@ -1,0 +1,23 @@
+{
+  "name": "saucedemo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "bdd": "cucumber-js \"tests/features/**/*.feature\" -r ts-node/register --require tests/support/**/*.ts --require tests/page-objects/**/*.ts --require tests/steps/**/*.ts  --publish",
+    "playwright:test": "npx playwright test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@cucumber/cucumber": "^12.3.0",
+    "@playwright/test": "^1.57.0",
+    "@types/cucumber": "^6.0.1",
+    "@types/node": "^25.0.0",
+    "playwright": "^1.57.0",
+    "playwright-bdd": "^8.4.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"  
+  }
+}
