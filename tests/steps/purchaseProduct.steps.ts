@@ -20,7 +20,7 @@ let checkoutOverviewPage: CheckoutOverviewPage;
 let orderCompletionPage: OrderCompletionPage;
 
 Before(async () => {
-    browser = await chromium.launch({ headless: false});
+    browser = await chromium.launch({ headless: true});
     page = await browser.newPage();
     saucedemoLoginPage = new SaucedemoLoginPage(page);
     productsPage = new ProductsPage(page);
