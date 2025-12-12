@@ -5,10 +5,10 @@ So that I can complete my shopping experience.
 
 Scenario Outline: Purchase a product successfully on SauceDemo
     Given I am on the SauceDemo login page
-    When I enter "standard_user" as username and "secret_sauce" as password and click login
+    And I enter "standard_user" as username and "secret_sauce" as password and click login
     Then I should be redirected to the products page
     When I add a "<product>" to the cart
-    When I navigate to the cart page
+    And I navigate to the cart page
     Then I should see the "<product>" in the cart
     When I checkout the cart
     Then I should see the checkout information page and enter "<firstname>" "<lastname>" "<postalcode>" and continue

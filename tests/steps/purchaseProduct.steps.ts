@@ -8,8 +8,7 @@ import { CheckoutOverviewPage } from '../page-objects/checkoutOverviewPage.ts';
 import { OrderCompletionPage } from '../page-objects/orderCompletionPage.ts';
 import { chromium } from '@playwright/test';
 import type { Browser, Page } from '@playwright/test';
-import { time } from 'node:console';
-import { TIMEOUT } from 'node:dns';
+
 
 let browser: Browser;
 let page: Page;
