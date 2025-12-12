@@ -20,4 +20,9 @@ A small Playwright + Cucumber (Cucumber-js) test suite for automating a purchase
 ## Run tests with below command
  - npm run bdd
 
+<img width="1907" height="992" alt="image" src="https://github.com/user-attachments/assets/13a99c67-d6bf-4ed4-b95b-bf469a994030" />
+
+<img width="1857" height="991" alt="image" src="https://github.com/user-attachments/assets/d054c432-75ee-47e6-9293-fbb050b98b7f" />
+
+
 
