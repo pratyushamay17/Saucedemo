@@ -5,7 +5,7 @@ So that I can complete my shopping experience.
 
 Scenario Outline: Purchase a product successfully on SauceDemo
     Given I am on the SauceDemo login page
-    And I enter "standard_user" as username and "secret_sauce" as password and click login
+    And I enter "<username>" "<password>" and click login
     Then I should be redirected to the products page
     When I add a "<product>" to the cart
     And I navigate to the cart page
@@ -16,6 +16,6 @@ Scenario Outline: Purchase a product successfully on SauceDemo
     Then I should see the order complete page
 
     Examples:
-        | product | firstname | lastname | postalcode |
-        | Sauce Labs Backpack|  John      | Doe      | 12345      |
-        | Sauce Labs Bike Light|    Jane      | Smith    | 67890      |
+        | username      | password     | product                |   firstname | lastname | postalcode |
+        | standard_user | secret_sauce | Sauce Labs Backpack    |   John      | Doe      | 12345      |
+        | standard_user | secret_sauce | Sauce Labs Bike Light  |   Jane      | Smith    | 67890      |

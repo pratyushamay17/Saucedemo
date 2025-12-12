@@ -38,7 +38,7 @@ Given('I am on the SauceDemo login page', async () => {
     await saucedemoLoginPage.navigateToLoginPage();
 });
 
-When('I enter {string} as username and {string} as password and click login', async (username: string, password: string) => {
+When('I enter {string} {string} and click login', async (username: string, password: string) => {
     await saucedemoLoginPage.loginCredentials(username, password);
 }); 
 
